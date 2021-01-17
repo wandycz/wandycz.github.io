@@ -1,27 +1,165 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>sample</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there!</h1>
-				<p> <a href="/about">Read more</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:ewawandycz@gmail.com">email</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="pl">
+
+<head>
+  <title>Ewa Wandycz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <script src="slides.js"></script>
+  <script src="https://kit.fontawesome.com/630beb04ff.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="plusSlides(1);">
+  <a id="poczatek"></a>
+  <div class="header">
+    <h1>Ewa Wandycz</h1>
+  </div>
+
+  <div class="navbar">
+    <a href="#kotlin">Kotlin</a>
+    <a href="#sql">SQL</a>
+    <a href="#python">Python</a>
+    <a href="#html">HTML</a>
+  </div>
+
+  <div class="layout">
+    <div class="info">
+      <div class="col1">
+        <a id="ja"></a>
+        <h2 class="w3-wide">O mnie</h2>
+        <p class="ptext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+          tempor
+          incididunt ut labore et dolore magna aliqua.<br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="col2">
+        <img src="me.png">
+
+        <div class="link">
+          <dl>
+            <dd><i class="fas fa-envelope"></i><a target="_blank"
+                href="mailto:ewawandycz@gmail.com">ewawandycz@gmail.com</a></dd>
+            <dd><i class="fab fa-github"></i><a target="_blank" href="https://github.com/wandycz">Ewa Wandycz</a>
+              GitHub</dd>
+            <dd><i class="fas fa-map-marker-alt"></i> <a href="#poczatek"></a>Poznań</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+
+    <a id="kotlin"></a>
+    <div class="proj">
+      <div class="header2">
+        <h2>Przykłady</h2>
+        <h3>Mobilna mapa kampusu Morasko</h3>
+      </div>
+      <img src="app.png">
+      <p class="ptext">Aplikacja mobilna pisana językiem <b>Kotlin</b> w IDE Android Studio przy użyciu <a
+          target="_blank" href="https://docs.mapbox.com/android/maps/guides/">Maps SDK</a> oraz <a target="_blank"
+          href="https://www.mapbox.com/">Mapbox Studio</a>.<br>
+        Aplikacja powstaje jako moja <b>praca inżynierska</b> i jest jeszcze w fazie rozwoju. Ma na celu stworzenie mapy
+        kampusu Morasko, która pomoże studentom odnaleźć się w studenckiej rzeczywistości, a przynajmniej w jej
+        geograficznych aspektach.<br>
+        Funkcjonalności, jakie w tej chwili posiada, pozwalają na podstawowe operacje na mapie oraz zmianę mapy
+        podkładowej, a także wybór poszczególnych budynków.
+        W planach jest dodanie geolokalizacji, nawigacji oraz informacji na temat poszczególnych wydziałów.
+      </p>
+    </div>
+    <div class="break">
+    </div>
+    <div class="proj">
+      <div class="header2">
+        <a id="sql"></a>
+        <h3>Baza danych o wulkanach</h3>
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="sql1.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="sql2.png" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <p class="ptext">Projekt bazy danych powstał na zajęcia na studiach. Została ona stworzona przy pomocy
+        <b>PostgreSQL
+        </b> oraz pgAdmin. <br>
+        Projekt polegał na stworzeniu bazy od podstaw, następnie wczytaniu do niej danych oraz utworzeniu przykładowych
+        widoków. W oparciu o powstałą bazę można odczytać najważniejsze parametry każdego z uwzględnionych w niej
+        wulkanów. Całość dostępna jest w repozytorium volcano-database.
+      </p>
+
+      <div class="break">
+      </div>
+
+      <div class="proj">
+        <div class="header2">
+          <a id="python"></a>
+          <h3>Symulator studenta - gra</h3>
+        </div>
+        <img src="game.png">
+        <p class="ptext">
+          Prosta gra napisana w języku <b>Python</b> przy użyciu biblioteki pygame. <br>
+          Gra polega na poruszaniu Pandą-Studentem przy pomocy strzałek w lewo i w prawo oraz zbieraniu spadających
+          ocen. Z zebranych ocen obliczana jest średnia.
+          Jeśli będzie poniżej 3.0 - przegrywasz.
+        </p>
+      </div>
+
+      <div class="break">
+      </div>
+
+      <div class="proj">
+        <div class="header2">
+          <a id="html"></a>
+          <h3>Mapa gminy Lisków</h3>
+        </div>
+        <img src="map.png">
+        <p class="ptext">
+          Webowa mapa gminy Lisków napisana w <b>HTML</b> przy użyciu <b>JavaScript, jQuery</b> oraz biblioteki Leaflet.
+          Posiada rozwijane menu, z którego można wybrać typ wyświetlanych obiektów. Mapa śledzi także mysz i wyświetla
+          odpowiednie współrzędne geograficzne.
+        </p>
+      </div>
+    </div>
+    <div class="break"></div>
+    <div class="footer">
+      <div class="nav">
+        <a href="#ja">O mnie</a>
+        <a href="#kotlin">Kotlin</a>
+        <a href="#sql">SQL</a>
+        <a href="#python">Python</a>
+        <a href="#html">HTML</a>
+        <p>© Ewa Wandycz 2021</p>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
