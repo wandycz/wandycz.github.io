@@ -108,12 +108,13 @@ text-align: left;
   padding-left: 10px;
 }
 
-.col2 a:hover {
-color: #e09c58; 
+
+.link a:visited{
+  color:#38342f;
 }
 
-.col2 a:visited{
-  color:#38342f;
+.link a:hover{
+  color: #e09c58; 
 }
 
 .padt {
