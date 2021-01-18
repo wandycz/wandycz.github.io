@@ -15,6 +15,24 @@ html, body{
   margin: auto;
 }
 
+.layout a:link {
+  color:#38342f;
+}
+
+
+.layout a:visited{
+  color:#38342f;
+}
+
+.layout a:hover{
+  color: #e09c58; 
+}
+
+.layout p{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
 .header {
   height: 80px;
   padding: 40px;
@@ -34,20 +52,40 @@ html, body{
 
 .header2 {
   width: 1200px;
-  padding: 80px;
   text-align: center;
   display:flex; 
   flex-wrap: wrap;
   color: #c4781a;
   margin:auto;
   font-size: 25px;
+  padding-left: 80px;
 }
 
-.header2 h3{
+.header2 h2{
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+  .header2 h3{
   margin:auto;
   width: 100%;
   text-align: center; 
   font-size: 20px;
+}
+
+.header2 h4{
+  text-align: left;
+  width: 100%;
+  margin:auto;
+  padding-top: 80px;
+}
+
+.header2 h5{
+  font-size: 18px;
+  margin: auto;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .w3-wide{
@@ -55,6 +93,7 @@ html, body{
 }
 
 .ptext{
+  padding-top: 20px;
   text-align: justify; 
   font-size: 16px;
   margin:auto;
@@ -92,6 +131,10 @@ html, body{
   color:#38342f;
 }
 
+.col2 img{
+  padding-top: 15%;
+}
+
 .col2 dd{
 text-align: left;
 
@@ -103,18 +146,8 @@ text-align: left;
 }
 
 .col2 a:link{
-  color:#38342f;
   margin:auto;
-  padding-left: 10px;
-}
-
-
-.link a:visited{
-  color:#38342f;
-}
-
-.link a:hover{
-  color: #e09c58; 
+  padding-left: 15px;
 }
 
 .padt {
@@ -123,6 +156,7 @@ text-align: left;
 .break{
 	height: 80px;
 }
+
 
 .info {
   max-width: 100%;
@@ -156,6 +190,12 @@ text-align: left;
   .info {
     flex-direction: column;
   }
+  .content:hover > img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 100;
+    }
 }
 
 .proj {
@@ -165,6 +205,7 @@ text-align: left;
   max-width: 100%;
   margin:auto;
   text-align: center; 
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 400px) {
@@ -298,6 +339,91 @@ img {
   color:#bbb;
 }
 
+
+.row {
+  margin:auto;
+  width: 1332px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row img{
+  width:300px;
+  height: 300px;
+  object-fit:cover;
+}
+
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  min-height: 450px;
+  display: flex;
+  align-items: stretch;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  width: 30vw;
+  max-width: 100%;
+  position: relative;
+}
+
+.content h4{
+  text-align: center;
+}
+
+.content p{
+  text-align: justify;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.content:hover > img{
+scale:1.2;
+transition: 0.5s;
+width: 500px;
+height: auto;
+position: absolute;
+z-index: 100;
+}
+
+#mapa_pzn:hover>img{
+  position: relative;
+}
+
+#krolik:hover>img{
+  position: relative;
+}
+
+#obraz:hover>img{
+  position: relative;
+}
+
+.content a:link {
+  color:#38342f;
+}
+
+.content a:hover{
+  color: #e09c58; 
+}
+
+.content a:visited{
+  color:#38342f;
+}
 
 .footer {
   background: #ddd; 
