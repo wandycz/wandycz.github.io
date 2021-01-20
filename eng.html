@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Ewa Wandycz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script src="slides.js"></script>
+    <script src="https://kit.fontawesome.com/630beb04ff.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body onload="plusSlides(1);">
+    <a id="poczatek"></a>
+    <div class="header">
+        <h1>Ewa Wandycz</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#kotlin">Kotlin</a>
+        <a href="#sql">SQL</a>
+        <a href="#python">Python</a>
+        <a href="#html">HTML</a>
+        <div class="flags">
+            <a href="index.html">
+                <img src="polish.png">
+            </a>
+            <a href="eng.html">
+                <img src="english.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="info">
+            <div class="col1">
+                <a id="ja"></a>
+                <h2 class="w3-wide">About me</h2>
+                <p class="ptext">
+                    Hello! I'm Ewa and I would like to introduce my projects and hobbies. First of all - I'm about to
+                    get
+                    my
+                    engineer's degree. My Engineering Thesis is <a href="#kotlin">mobile map app.</a><br> <br>
+
+                    I'm mad about new technologies: from technology latest news (I believe the question "how many more
+                    lenses can
+                    smartphone brands stuff into their smartphones" is very intriguing) to trying to develop my own apps
+                    and
+                    programs (and the examples of these are the main subject of this website).<br><br>
+                    In my spare time I adore making art: graphics, drawings or painting and I sometimes even sew a plush
+                    toy. I
+                    also love to play board games while meeting my friends and long walks (with rock music providing
+                    perfect
+                    accompaniment to those rambles).<br><br>
+                    Speaking about my career - I would love to work in IT; I especially would like to start working as
+                    software
+                    tester/quality assurance specialist and do what I like best: learn about new technologies.
+                </p>
+            </div>
+
+            <div class="col2">
+                <img src="me.png">
+                <div class="link">
+                    <dl>
+                        <dd><i class="fas fa-envelope"></i><a target="_blank"
+                                href="mailto:ewawandycz@gmail.com">ewawandycz@gmail.com</a></dd>
+                        <dd><i class="fab fa-github"></i><a target="_blank" href="https://github.com/wandycz">Ewa
+                                Wandycz</a>
+                            on GitHub</dd>
+                        <dd><i class="fas fa-map-marker-alt"></i> <a href="#poczatek"></a>Poznań, Poland</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+
+        <a id="kotlin"></a>
+        <div class="proj">
+            <div class="header2 blablador">
+                <h2>My programming projects</h2>
+                <h3>Morasko Campus mobile map app</h3>
+                <h5><a target="_blank" href="https://github.com/wandycz/mobile-map">GitHub repo</a></h5>
+            </div>
+            <img src="app.png">
+            <p class="ptext">
+                Mobile app written in <b>Kotlin</b> language with use of Android Studio IDE, <a
+                target="_blank" href="https://docs.mapbox.com/android/maps/guides/">Maps SDK</a> and <a target="_blank"
+                href="https://www.mapbox.com/">Mapbox Studio</a>. The
+                app is being developed as my <b>Engineering Thesis</b> and is still in its pre-beta phase. The app will provide
+                the Morasko Campus map and will help students to find the right way - at least in the geographical
+                meaning.<br>
+                Right now the app allows to use the map, change the base map and to select every single Morasko-based
+                department of the university. I'm planning to add geolocation, navigation and more information about
+                every single department.
+            </p>
+        </div>
+
+        <div class="proj">
+            <div class="header2 blablador">
+                <a id="sql"></a>
+                <h3>Volcanoes database</h3>
+                <h5><a target="_blank" href="https://github.com/wandycz/volcanoes-database">GitHub repo</a></h5>
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="sql1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="sql2.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            <p class="ptext">
+                The database project was created for the uni course. It was created in <b>PostgreSQL</b> with the use of
+                pgAdmin.
+                <br>
+                The project was to make the whole database from scratch, then to load the data into it. I've created few
+                views that help to select right data. The database allows to learn about the most important parameters
+                of each volcano in it.
+            </p>
+        </div>
+
+        <div class="proj">
+            <div class="header2 blablador">
+                <a id="python"></a>
+                <h3>Student sim - the game</h3>
+                <h5><a target="_blank" href="https://github.com/wandycz/student-sim-game">GitHub repo</a></h5>
+            </div>
+            <img src="game.png">
+            <p class="ptext">
+                A simple game written in <b>Python</b> with the use of pygame library. <br>
+                The game is about moving the Panda-Student (<a target="_blank" href='https://www.freepik.com/vectors/book'>graphic source</a>) left and right using keyboard arrows and collecting the
+                grades that are falling down. From the grades you collect - the arithmetic average is calculated. If
+                your
+                grades are below 3.0 - the game is over.
+            </p>
+        </div>
+
+        <div class="proj">
+            <div class="header2 blablador">
+                <a id="html"></a>
+                <h3>Liskow municipality web map</h3>
+                <h5><a target="_blank" href="https://github.com/wandycz/liskow-municipality-web-map">GitHub repo</a>
+                </h5>
+            </div>
+            <img src="map.png">
+            <p class="ptext">
+                The web map of Liskow municipality done with <b>HTML</b>, <b>JavaScript, jQuery</b> and Leaflet library. The map has a
+                dropdown menu in which the type of showed object can be selected. It also tracks the cursor and shows
+                the geographic coordinates accordingly.
+            </p>
+        </div>
+
+        <div class="proj">
+            <div class="header2 blablador">
+                <h4>My artworks</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="ponybert.png">
+                    <h4>Portrait of Hubert</h4>
+                    <p>It was drawn with a graphics tablet in Krita.
+                    </p>
+                </div>
+
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="icon.png" alt="Lights">
+                    <h4>Mobile map icon</h4>
+                    <p>Created in Adobe Illustrator for my Engineering Thesis - mobile map.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="xfiles.jpg">
+                    <h4>Painting X</h4>
+                    <p>The oil painting for my friend - X Files fan.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <img src="sloth.JPG">
+                    <h4>The Sloth King</h4>
+                    <p>Half-plushie, half-sculpture picturing the demonic sloth.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="leaves.jpg">
+                    <h4>Keyring leaves</h4>
+                    <p>Leaves that I've sewn as a gift for my colleagues from my previous job.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="llama.JPG">
+                    <h4>Evil Alpaca</h4>
+                    <p>I'm happy it's only a plushie, otherwise one day it could take over the world.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div id="mapa_pzn" class="content">
+                    <img src="map2.png">
+                    <h4>North Poznan map</h4>
+                    <p>The map that I've created with <a target="_blank" href="https://github.com/cwaniakobezczel">Agata Saczek
+                    </a> in Inkscape for the Uni course.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div id="krolik" class="content">
+                    <img src="rabbit.jpg">
+                    <h4>The White Rabbit</h4>
+                    <p>Teacup that I've painted in the image of Alice in the Wonderland White Rabbit.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div id="obraz_f" class="content">
+                    <img src="fallout.JPG">
+                    <h4>Fallout painting</h4>
+                    <p>Another oil painting of mine - based on the Fallout game.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="nav">
+            <a href="#ja">About me</a>
+            <a href="#kotlin">Kotlin</a>
+            <a href="#sql">SQL</a>
+            <a href="#python">Python</a>
+            <a href="#html">HTML</a>
+            <p>© Ewa Wandycz 2021</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
